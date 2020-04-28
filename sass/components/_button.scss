@@ -1,21 +1,24 @@
 
 .btn {
-    &:link,
-    &:visited {
-        text-transform: uppercase;
-        text-decoration: none;
-        padding: 1.5rem 4rem;
-        display: inline-block;
-        border-radius: 500rem;
 
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 500rem;
+
+
+    backface-visibility: hidden;
+    position: relative;
+    transition: transform .15s;
+
+    border: none;
     
-        backface-visibility: hidden;
-        position: relative;
-        transition: transform .15s;
-        }
     &:hover {
         transform: translateY(-.3rem);
         box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+
+        outline: none;
 
         &::after {
             transform: scaleX(1.4) scaleY(1.6);
@@ -45,7 +48,7 @@
     
     &--white {
         background-color: $color-white;
-        color: $color-gray-dark;
+        color: $color-grey-dark;
 
         &::after {
             background-color: $color-white;
