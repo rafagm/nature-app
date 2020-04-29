@@ -26,11 +26,11 @@
 
             <nav class="navigation__nav">
                 <ul class="navigation__list">
-                    <li class="navigation__item"><a href="" class="navigation__link"><span>01</span>Sobre nosotros</a></li>
-                    <li class="navigation__item"><a href="" class="navigation__link"><span>02</span>Beneficios</a></li>
+                    <li class="navigation__item"><a href="#about" class="navigation__link"><span>01</span>Sobre nosotros</a></li>
+                    <li class="navigation__item"><a href="#benefits" class="navigation__link"><span>02</span>Beneficios</a></li>
                     <li class="navigation__item"><a href="#popular-tours" class="navigation__link"><span>03</span>Tours populares</a></li>
-                    <li class="navigation__item"><a href="" class="navigation__link"><span>04</span>Historias</a></li>
-                    <li class="navigation__item"><a href="" class="navigation__link"><span>05</span>Reservar ahora</a></li>
+                    <li class="navigation__item"><a href="#stories" class="navigation__link"><span>04</span>Historias</a></li>
+                    <li class="navigation__item"><a href="#book" class="navigation__link"><span>05</span>Reservar ahora</a></li>
                 </ul>
             </nav>
 
@@ -51,7 +51,7 @@
         </header>
 
         <main>
-            <section class="section-about">
+            <section class="section-about" id="about">
                 <div class="u-center-text u-mb-big u-hidden">
                     <h2 class="heading-secondary">
                         Viajes excitantes para gente aventurera
@@ -79,7 +79,7 @@
                 </div>
             </section>
 
-            <section class="section-features">
+            <section class="section-features" id="benefits">
                 <div class="row">
                     <div class="col-1-of-4">
                         <div class="feature-box">
@@ -142,7 +142,7 @@
                                         <p class="card__price-only">Sólo</p>
                                         <p class="card__price-value">299 €</p>
                                     </div>
-                                    <a href="" class="btn btn--white">Comprar</a>
+                                    <a href="#popup" class="btn btn--white">Comprar</a>
 
                                 </div>
                             </div>
@@ -172,7 +172,7 @@
                                         <p class="card__price-only">Sólo</p>
                                         <p class="card__price-value">400 €</p>
                                     </div>
-                                    <a href="" class="btn btn--white">Comprar</a>
+                                    <a href="#popup" class="btn btn--white">Comprar</a>
 
                                 </div>
                             </div>
@@ -202,7 +202,7 @@
                                         <p class="card__price-only">Sólo</p>
                                         <p class="card__price-value">500 €</p>
                                     </div>
-                                    <a href="" class="btn btn--white">Comprar</a>
+                                    <a href="#popup" class="btn btn--white">Comprar</a>
 
                                 </div>
                             </div>
@@ -216,7 +216,7 @@
                     
                 </div>                
             </section>
-            <section class="section-stories">
+            <section class="section-stories" id="stories">
                 <div class="bg-video">
                     <video class="bg-video__content" autoplay muted loop>
                         <source src="img/video.mp4" type="video/mp4">
@@ -273,7 +273,7 @@
                 </div>
             </section>
 
-            <section class="section-book">
+            <section class="section-book" id="book">
                 <div class="row">
                     <div class="book">
                         <div class="book__form">
@@ -338,6 +338,32 @@
                 </div>
             </div>
         </footer>
+
+        <div class="popup" id="popup">
+            <div class="popup__content">
+                <div class="popup__images">
+                    <!-- <img src="/img/nat-8.jpg" alt="" class="popup__images--1"> -->
+                    <div class="popup__images--1"></div>
+                    <div class="popup__images--2"></div>
+                    <!-- <img src="/img/nat-9.jpg" alt="" class="popup__images--2"> -->
+                </div>
+                <div class="popup__book">
+                    <a href="#popular-tours" class="popup__close">&times;</a>
+                    <div class=" u-mb-big">
+                        <h2 class="heading-secondary u-mb-small">
+                            Reserva ahora
+                        </h2>
+                        <h3 class="heading-tertiary u-mb-small">Términos y condiciones</h3>
+                        <p class="popup__text u-mb-small">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia quo beatae quia voluptates voluptate iste ab nemo quibusdam dolores obcaecati! Cupiditate nesciunt in molestiae nostrum ex dolorem incidunt tempore deserunt.
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia quo beatae quia voluptates voluptate iste ab nemo quibusdam dolores obcaecati! Cupiditate nesciunt in molestiae nostrum ex dolorem incidunt tempore deserunt.
+                        </p>
+                        <a href="" class="btn btn--green">Reservar</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- <section class="grid-test">
             <div class="row">
