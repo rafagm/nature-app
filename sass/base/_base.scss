@@ -11,19 +11,19 @@ html {
     font-size: 67%;
 
     @include respond($mq-big-desktop) {
-        font-size: 75%;
+        font-size: 75%; //1rem = 12px;
     }
 
     @include respond($mq-tablet-landscape) {
-        font-size: 56.25%;
+        font-size: 56.25%; //1rem = 9px;
     }
 
     @include respond($mq-tablet-portrait) {
-        font-size: 50;
+        font-size: 50%; //1rem = 8px;
     }
 
     @include respond($mq-tablet-portrait) {
-        font-size: 30%;
+        font-size: 30%; //1rem = 4.8px;
     }
 
 
