@@ -33,3 +33,9 @@ $default-font-size: 1.6rem;
 
 // shadows
 $shadow-small: 0 1.5rem 4rem rgba($color-black, .15);
+
+//Media query
+$mq-phone: phone;
+$mq-tablet-portrait: table-portrait;
+$mq-tablet-landscape: table-landscape;
+$mq-big-desktop: big-desktop;

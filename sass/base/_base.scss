@@ -7,8 +7,23 @@
 }
 
 html {
-    //Define que es 1rem
+    //Define que es 1rem = 10px
     font-size: 67%;
+
+    @include respond($mq-big-desktop) {
+        font-size: 75%;
+    }
+
+    @include respond($mq-tablet-landscape) {
+        font-size: 56.25%;
+    }
+
+    @include respond($mq-tablet-portrait) {
+        font-size: 40%;
+    }
+
+
+
 }
 
 body {
