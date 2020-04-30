@@ -19,7 +19,11 @@ html {
     }
 
     @include respond($mq-tablet-portrait) {
-        font-size: 40%;
+        font-size: 50;
+    }
+
+    @include respond($mq-tablet-portrait) {
+        font-size: 30%;
     }
 
 
