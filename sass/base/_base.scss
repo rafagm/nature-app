@@ -22,7 +22,7 @@ html {
         font-size: 50%; //1rem = 8px;
     }
 
-    @include respond($mq-tablet-portrait) {
+    @include respond($mq-phone) {
         font-size: 30%; //1rem = 4.8px;
     }
 
