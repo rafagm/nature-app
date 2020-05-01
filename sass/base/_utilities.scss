@@ -28,14 +28,26 @@
 
 .u-mb-small {
     margin-bottom: 1.5rem;
+
+    @include respond($mq-tablet-portrait) {
+        margin-bottom: 1rem;
+   }
 }
 
 .u-mb-normal {
     margin-bottom: 4rem;
+
+    @include respond($mq-tablet-portrait) {
+        margin-bottom: 2.5rem;
+   }
 }
 
 .u-mb-big {
     margin-bottom: 8rem;
+
+    @include respond($mq-tablet-portrait) {
+        margin-bottom: 5rem;
+   }
 }
 
 .u-mb-huge {

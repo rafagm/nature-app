@@ -9,6 +9,9 @@
 
     &__logo-box {
 
+        @include respond($mq-tablet-portrait) {
+            margin-bottom: 4rem;
+        }
     }
     
     &__logo {

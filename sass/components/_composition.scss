@@ -12,20 +12,43 @@
         transition: all .2s;
         outline-offset: 2rem;
 
+        @include respond($mq-tablet-portrait) {
+            float: left;
+            position: relative;
+            width: 30%;
+            
+            &:not(:last-child) {
+                margin-right: 1rem;
+            }
+        }
+
         &--pic1 {
             left: 0;
             top: 2rem;
+
+            @include respond($mq-tablet-portrait) {
+                top: 0;
+            }
         }
     
         &--pic2 {
             right: 0 ;
             top: 4.5rem;
+
+            @include respond($mq-tablet-portrait) {
+                top: 0;
+            }
             
         }
     
         &--pic3 {
             left: 20%;
             top: 10rem;
+
+            @include respond($mq-tablet-portrait) {
+                top: 0;
+                left: 0;
+            }
         }
 
         &:hover {
