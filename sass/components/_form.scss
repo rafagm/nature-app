@@ -45,12 +45,14 @@
         margin-top: .7rem;
         display: block;
         transition: all .3s;
+        position: relative;
+        top: -8.5rem;
     }
 
     &__input:placeholder-shown + &__label {
         visibility: hidden;
         opacity: 0;
-        transform: translateY(-4rem);
+        transform: translateY(2rem);
     }
 
     &__radio-group {
