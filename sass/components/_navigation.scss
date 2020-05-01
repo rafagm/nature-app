@@ -17,6 +17,11 @@
         text-align: center;
         cursor: pointer;
 
+        @include respond($mq-tablet-portrait) {
+            top: 4rem;
+            right: 4rem;
+        }
+
 
     }
 

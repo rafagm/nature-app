@@ -10,10 +10,6 @@ html {
     //Define que es 1rem = 10px
     font-size: 67%;
 
-    @include respond($mq-big-desktop) {
-        font-size: 75%; //1rem = 12px;
-    }
-
     @include respond($mq-tablet-landscape) {
         font-size: 56.25%; //1rem = 9px;
     }
@@ -22,14 +18,17 @@ html {
         font-size: 50%; //1rem = 8px;
     }
 
-    @include respond($mq-phone) {
-        font-size: 30%; //1rem = 4.8px;
+    @include respond($mq-big-desktop) {
+        font-size: 75%; //1rem = 12px;
     }
-
-
-
 }
 
 body {
-    box-sizing: border-box;
+    box-sizing: border-box;    
+    color: $color-grey-dark;
+    padding: 3rem;
+
+    @include respond($mq-tablet-portrait) {
+        padding: 0;
+    }
 }

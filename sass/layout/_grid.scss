@@ -4,8 +4,23 @@
     max-width: $grid-width;
     margin: 0 auto;
 
+    @include respond($mq-tablet-portrait) {
+        max-width: 65%;
+    }
+
+    @include respond($mq-phone) {
+        max-width: 100%;
+        padding: 0 2rem;
+    }
+
+
+
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
+        
+        @include respond($mq-tablet-portrait) {
+            margin-bottom: $glutter-vertical-small;
+        }
     }
 
     [class^="col-"] {
@@ -13,6 +28,20 @@
 
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
+
+            @include respond($mq-tablet-portrait) {
+                margin-right: 0;
+            }
+
+        }
+
+        @include respond($mq-tablet-portrait) {
+            width: 100% !important;
+
+            &:not(:last-child) {
+                margin-bottom: $gutter-vertical;
+                margin-bottom: $glutter-vertical-small;
+            }
         }
     }
 

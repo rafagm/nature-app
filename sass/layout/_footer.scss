@@ -3,6 +3,10 @@
     padding: 9rem 0;
     font-size: 1.4rem;
 
+    @include respond($mq-tablet-portrait) {
+        padding: 3rem 0;
+    }
+
     &__logo-box {
 
     }
@@ -19,6 +23,11 @@
         padding-top: 2rem;
         display: inline-block;
         width: 100%;
+
+        @include respond($mq-tablet-portrait) {
+            width: 100% !important;
+            text-align: center;
+        }
         
     }
     
@@ -56,5 +65,10 @@
         padding-top: 2rem;
         display: inline-block;
         width: 100%;
+
+        @include respond($mq-tablet-portrait) {
+            width: 100% !important;
+            text-align: center;
+        }
     }
 }

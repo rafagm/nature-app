@@ -13,6 +13,7 @@
 }
 
 // MEDIA QUERY MANAGER
+// ORDER: Base + Typography > general layout > grid page layout > components
 
 @mixin respond-phone {
     @media (max-width: 37.5em) { @content }; //600px
