@@ -56,6 +56,11 @@
         width: 33.3333333%;
         display: table-cell;
 
+        @include respond($mq-tablet-portrait) {
+            display: none;
+            visibility: hidden;
+        }
+
         &--1 {
             display: block;
             height: 50%;
