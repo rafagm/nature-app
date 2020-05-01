@@ -332,6 +332,10 @@ body {
   -moz-perspective: 150rem;
   position: relative;
   height: 50rem; }
+  @media (max-width: 56.25em) {
+    .card {
+      width: 75%;
+      margin: 0 auto; } }
   .card__side {
     height: 50rem;
     width: 100%;

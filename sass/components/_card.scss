@@ -4,6 +4,11 @@
     position: relative;
     height: 50rem;
 
+    @include respond($mq-tablet-portrait) {
+        width: 75%;
+        margin: 0 auto;
+    }
+
     &__side {
         height: 50rem;
         width: 100%;
